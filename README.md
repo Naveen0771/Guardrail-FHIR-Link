@@ -1,0 +1,43 @@
+# 🛡️ Guardrail FHIR-Link
+
+A high-security **Model Context Protocol (MCP)** server providing a clinical intelligence bridge between AI agents and FHIR-compliant synthetic data.
+
+---
+
+## 🚀 Quick Start (3 Steps)
+
+1. Environment Setup
+Clone the repo and install dependencies:
+```bash
+pip install fastmcp httpx python-dotenv uvicorn
+
+2. Configure Secrets
+Create a .env file in the root directory:
+
+Plaintext
+API_KEY_HEADER=X-API-Key
+API_KEY_VALUE=your_secret_here
+
+3. Run & Tunnel
+Bash
+# Terminal 1
+python server.py
+
+# Terminal 2
+ngrok http 8000
+Use the ngrok URL in the Prompt Opinion Dashboard with /sse.
+
+🧠 Clinical Intelligence Tools
+get_patient_summary: Aggregates synthetic clinical conditions.
+
+check_medications: Summarizes active prescriptions.
+
+⚖️ Hackathon Compliance
+✅ Rule 4: 100% Synthetic data (HAPI FHIR R4).
+
+✅ Rule 5: Innovative multi-resource clinical mapping.
+
+✅ Rule 6: Secured header validation (A2A Ready).
+
+🏗️ Architectural Excellence
+Built on Python 3.13 using a Context Injection pattern. This prevents circular import deadlocks common in early-stage MCP servers and ensures a stable SSE handshake during marketplace discovery.
